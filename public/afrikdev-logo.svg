@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Deep Navy / Midnight Blue Gradient from user's new logo -->
+    <radialGradient id="navyBadgeGrad" cx="38%" cy="32%" r="68%">
+      <stop offset="0%" stop-color="#1e2c47" />
+      <stop offset="45%" stop-color="#131e33" />
+      <stop offset="85%" stop-color="#0c1524" />
+      <stop offset="100%" stop-color="#070d17" />
+    </radialGradient>
+
+    <!-- Electric Cyan Glow for Circuit & Brackets -->
+    <linearGradient id="electricCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#00b4d8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <!-- 3D Shadow Filter for White Africa Contour -->
+    <filter id="africa3DShadow" x="-20%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3.5" flood-color="#000000" flood-opacity="0.65" />
+    </filter>
+
+    <filter id="neonCyanGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="glow" />
+      <feComposite in="SourceGraphic" in2="glow" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Outer beveled rim of the physical token -->
+  <circle cx="250" cy="250" r="238" fill="#070d17" stroke="#253552" stroke-width="4" />
+  <circle cx="250" cy="250" r="234" fill="url(#navyBadgeGrad)" />
+  <circle cx="250" cy="250" r="233" fill="none" stroke="#2a3c5a" stroke-width="2" opacity="0.6" />
+
+  <!-- Inner crisp white circular ring framing the emblem -->
+  <circle cx="250" cy="190" r="142" fill="none" stroke="#ffffff" stroke-width="4.5" filter="url(#africa3DShadow)" />
+
+  <!-- Africa Continent & High-Tech Circuit System -->
+  <g transform="translate(250, 190) scale(1.62) translate(-65, -70)" filter="url(#africa3DShadow)">
+    <!-- Africa white embossed outer contour -->
+    <path d="M 28 20 
+             C 45 16, 75 14, 90 25 
+             C 105 34, 115 50, 105 65 
+             C 98 75, 88 80, 85 92 
+             C 80 108, 68 125, 60 138 
+             C 52 125, 48 110, 42 98 
+             C 32 82, 16 75, 12 55 
+             C 8 38, 16 24, 28 20 Z" 
+          fill="#0c1524" 
+          stroke="#ffffff" 
+          stroke-width="3.8" 
+          stroke-linejoin="round" 
+          stroke-linecap="round" />
+
+    <!-- Madagascar island in white stroke -->
+    <path d="M 94 105 C 98 112, 94 122, 90 128 C 88 122, 90 114, 94 105 Z" 
+          fill="#0c1524" 
+          stroke="#ffffff" 
+          stroke-width="3.2" 
+          stroke-linecap="round" />
+
+    <!-- Left & Top Circuit Traces branching across West & North Africa -->
+    <path d="M 18 42 L 32 40 L 44 48" fill="none" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" filter="url(#neonCyanGlow)" />
+    <circle cx="18" cy="42" r="2.2" fill="#38bdf8" />
+    <path d="M 24 58 L 36 54 L 42 58" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" />
+    <circle cx="24" cy="58" r="2" fill="#38bdf8" />
+
+    <path d="M 68 24 L 76 30 L 76 42" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" />
+    <circle cx="68" cy="24" r="2" fill="#38bdf8" />
+
+    <!-- Central Glowing Code Brackets </ > in Electric Cyan -->
+    <!-- Left Bracket < -->
+    <path d="M 52 48 L 41 58 L 52 68" 
+          fill="none" 
+          stroke="#38bdf8" 
+          stroke-width="4.2" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          filter="url(#neonCyanGlow)" />
+    <!-- Slash / -->
+    <line x1="62" y1="45" x2="56" y2="71" 
+          stroke="#00b4d8" 
+          stroke-width="4.2" 
+          stroke-linecap="round" 
+          filter="url(#neonCyanGlow)" />
+    <!-- Right Bracket > -->
+    <path d="M 66 48 L 77 58 L 66 68" 
+          fill="none" 
+          stroke="#38bdf8" 
+          stroke-width="4.2" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          filter="url(#neonCyanGlow)" />
+
+    <!-- Circuit lines running down towards South Africa -->
+    <!-- Center main line with node -->
+    <path d="M 59 74 L 59 108 L 60 128" 
+          fill="none" 
+          stroke="#38bdf8" 
+          stroke-width="2.8" 
+          stroke-linecap="round" 
+          filter="url(#neonCyanGlow)" />
+    <circle cx="59" cy="78" r="2.8" fill="#38bdf8" />
+
+    <!-- Left lower circuit trace -->
+    <path d="M 44 74 L 44 88 L 51 98 L 51 116" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="2" 
+          stroke-linecap="round" />
+    <circle cx="44" cy="74" r="2.2" fill="#ffffff" />
+
+    <!-- Right lower circuit trace -->
+    <path d="M 74 74 L 74 86 L 67 96 L 67 114" 
+          fill="none" 
+          stroke="#38bdf8" 
+          stroke-width="2.2" 
+          stroke-linecap="round" />
+    <circle cx="74" cy="74" r="2.2" fill="#38bdf8" />
+  </g>
+
+  <!-- Typography matching user's photo exactly -->
+  <!-- AFRIK in Pure White & DEV in Electric Blue -->
+  <text x="250" y="392" 
+        text-anchor="middle" 
+        font-family="'Montserrat', 'Inter', -apple-system, sans-serif" 
+        font-size="46" 
+        font-weight="900" 
+        letter-spacing="4">
+    <tspan fill="#ffffff">AFRIK</tspan><tspan fill="#38bdf8">DEV</tspan>
+  </text>
+
+  <!-- Subtitle: Pour les devs, par les devs. in Electric Blue (#38bdf8) -->
+  <text x="250" y="430" 
+        text-anchor="middle" 
+        font-family="'Inter', -apple-system, sans-serif" 
+        font-size="18" 
+        font-weight="600" 
+        letter-spacing="0.5" 
+        fill="#38bdf8">
+    Pour les devs, par les devs.
+  </text>
+</svg>
